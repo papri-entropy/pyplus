@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 
 """
- 1. In the lab environment use Netmiko to connect to one of the Cisco NX-OS devices. 
-You can find the IP addresses and username/passwords of the Cisco devices in the 
-'Lab Environment' email or alternatively in the ~/.netmiko.yml file. 
-Simply print the router prompt back from this device to verify you are connecting to the device properly.
+3. For one of the Cisco IOS devices, use Netmiko and the send_command() method 
+to retrieve 'show version'. Save this output to a file in the current working directory.
 """
 
 from pprint import pprint
