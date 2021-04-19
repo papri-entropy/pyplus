@@ -5,7 +5,6 @@ cisco3#terminal width 511
 cisco3#terminal length 0
 cisco3#
 cisco3#
-cisco3#
 cisco3#show version
 Cisco IOS XE Software, Version 16.12.03
 Cisco IOS Software [Gibraltar], ISR Software (ARMV8EL_LINUX_IOSD-UNIVERSALK9_IAS-M), Version 16.12.3, RELEASE SOFTWARE (fc5)
@@ -27,10 +26,10 @@ software.
 
 ROM: IOS-XE ROMMON
 
-cisco3 uptime is 38 weeks, 2 days, 5 hours, 28 minutes
-Uptime for this control processor is 38 weeks, 2 days, 5 hours, 29 minutes
+cisco3 uptime is 38 weeks, 2 days, 5 hours, 33 minutes
+Uptime for this control processor is 38 weeks, 2 days, 5 hours, 35 minutes
 System returned to ROM by Reload Command at 10:13:33 PDT Sat Jul 25 2020
-System restarted at 10:16:51 PDT Sat Jul 25 2020
+System restarted at 10:16:50 PDT Sat Jul 25 2020
 System image file is "bootflash:c1100-universalk9_ias.16.12.03.SPA.bin"
 Last reload reason: Reload Command
 
