@@ -41,6 +41,8 @@ pprint(output_ver)
 output_lldp = net_connect.send_command(show_lldp_nei, use_textfsm=True)
 print("*" * 80)
 pprint(output_lldp)
+print("*" * 80)
+print(f"LLDP Data Structure Type: { type(output_lldp) }")
 
 for device in output_lldp:
     print("*" * 80)
