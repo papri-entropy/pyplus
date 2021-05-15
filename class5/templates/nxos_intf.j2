@@ -1,0 +1,6 @@
+{%- for k, v  in nxos_devices.items() %}
+interface {{ v.INTF }}
+  ip address {{ v.IP_ADDRESS }}/{{ v.NETMASK }}
+{%- endfor %}
+
+

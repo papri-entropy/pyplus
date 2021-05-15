@@ -1,0 +1,8 @@
+{%- for k, v  in nxos_devices.items() %}
+interface {{ v.INTF }}
+  ip address {{ v.IP_ADDRESS }}/{{ v.NETMASK }}
+router bgp {{ v.LOCAL_AS }}
+  neighbor {{ v.PEER_IP }} remote-as {{ v.LOCAL_AS }}
+    address-family ipv4 unicast
+{%- endfor %}
+
