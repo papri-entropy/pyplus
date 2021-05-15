@@ -82,10 +82,11 @@ def bgp_check():
         else:
     	    print("BGP NOT Established, please t-shoot") 
 
-nxos_config()
-time.sleep(15)
-ping_check()
-bgp_check()
+if __name__=="__main__":
+    nxos_config()
+    time.sleep(15)
+    ping_check()
+    bgp_check()
 
 
 
