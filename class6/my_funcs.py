@@ -1,8 +1,9 @@
 import yaml
 from getpass import getpass
+import os
 
 def read_yaml(inventory):
-    password = getpass()
+    password = os.getenv("PYPLUS_PASS") if os.getenv("PYPLUS_PASS") else getpass() 
     with open(inventory) as f:
         data = yaml.load(f)
     for k in data:
