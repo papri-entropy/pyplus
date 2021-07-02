@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 
 """
-2b. Create a Python module named 'my_funcs.py'. In this file create two functions: 
-function1 should read the YAML file you created in exercise 2a and return the corresponding data structure; 
-function2 should handle the output printing of the ARP entries 
-(in other words, create a separate function that handles all printing to standard out of the 'show ip arp' data). 
-Create a new Python program based on exercise2a except the YAML file loading 
-and the output printing is accomplished using the functions defined in my_funcs.py.
+3. Using your external YAML file and your function located in my_funcs.py, 
+use pyeapi to connect to arista4.lasthop.io and retrieve "show ip route". 
+From this routing table data, extract all of the static and connected routes from the default VRF. 
+Print these routes to the screen and indicate whether the route is a connected route or a static route. 
+In the case of a static route, print the next hop address.
 """
 
 from pprint import pprint
