@@ -1,6 +1,14 @@
 #!/usr/bin/env python
 
 """
+2a. Create a Python module named jnpr_devices.py.
+This Python module should contain a dictionary named "srx2".
+This "srx2" dictionary should contain all of the key-value pairs
+needed to establish a PyEZ connection.
+You should use getpass() for the password handling.
+You should import this "srx2" device definition for all
+of the remaining exercises in class8.
+
 2b. Create a Python program that creates a PyEZ Device connection to "srx2" 
 (using the previously created Python module). 
 Using this PyEZ connection and the RouteTable and ArpTable views 
@@ -25,16 +33,15 @@ import jnpr_devices
 from jnpr.junos.op.routes import RouteTable
 from jnpr.junos.op.arp import ArpTable
 
-srx2_device = Device(**jnpr_devices.srx2)
-
-srx2_device.open()
-
-#print("Printing srx2 facts: ")
-#pprint(srx2_device.facts)
-
 def check_connected():
 
     conn_status = srx2_device.connected
+
+    if conn_status:
+        print("Device is successfully connected")
+    else:
+        print("Device failed to connect")
+        sys.exit(1)
 
     return conn_status
 
@@ -84,6 +91,10 @@ def print_output(JNPR_DEV, RIB_TABLE, ARP_TABLE):
     print()
 
 if __name__=="__main__":    
+
+    srx2_device = Device(**jnpr_devices.srx2)
+
+    srx2_device.open()
 
     conn_status = check_connected()
 
