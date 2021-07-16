@@ -37,6 +37,12 @@ import my_devices
 from pprint import pprint
 from napalm import get_network_driver
 from my_functions import napalm_conn, create_backup, create_checkpoint
+# Disable Self-signed Certificate Warnings
+import requests
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+
 
 if __name__=="__main__":
 
