@@ -15,3 +15,15 @@ def create_backup(conn_object):
     running_conf = conn_object.get_config()
 
     return running_conf 
+
+def create_checkpoint(conn_object, checkpoint_name):
+
+    checkpoint = conn_object._get_checkpoint_file()
+
+    with open(checkpoint_name, "w") as f:
+        f.write(checkpoint)
+
+    return checkpoint
+
+  
+    

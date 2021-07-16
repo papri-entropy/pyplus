@@ -21,5 +21,14 @@ arista1 = {
     "optional_args": {}
     }
 
+nxos1 = {
+    "hostname": "nxos1.lasthop.io",
+    "device_type": "nxos",
+    "username": "pyclass",
+    "password": password,
+    "optional_args": {"port": 8443}
+    }
 
+
+    
 
