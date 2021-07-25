@@ -11,3 +11,17 @@ def ssh_command(device, command):
     print(output)
  
 
+def ssh_command2(device, command):
+    with ConnectHandler(**device) as net_connect:
+        output = net_connect.send_command(command)
+
+    return output
+ 
+def ssh_command3(device):
+    with ConnectHandler(**device) as net_connect:
+        if device['host'] == "srx2.lasthop.io":
+            output = net_connect.send_command("show arp")
+        else:
+            output = net_connect.send_command("show ip arp")
+
+    return output

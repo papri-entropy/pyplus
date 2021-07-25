@@ -1,4 +1,5 @@
-Last login: Sat Jul 24 15:50:09 2021 from 52.53.155.115
+Last login: Sun Jul 25 07:24:57 2021 from 52.53.155.115
+
 terminal width 511
 terminal width 511
 arista1#terminal width 511
@@ -7,20 +8,9 @@ arista1#terminal length 0
 Pagination disabled.
 arista1#
 arista1#
-arista1#show version
-Arista vEOS
-Hardware version:    
-Serial number:       
-System MAC address:  00aa.fc05.b513
-
-Software image version: 4.20.10M
-Architecture:           i386
-Internal build version: 4.20.10M-10040268.42010M
-Internal build ID:      68f3ae78-65cb-4ed3-8675-0ff2219bf118
-
-Uptime:                 5 weeks, 4 days, 20 hours and 41 minutes
-Total memory:           4010924 kB
-Free memory:            2008820 kB
-
+arista1#show ip arp
+Address         Age (min)  Hardware Addr   Interface
+10.220.88.1           N/A  0062.ec29.70fe  Vlan1, Ethernet1
+10.220.88.22          N/A  a093.5141.b780  Vlan1, not learned
 arista1#
 arista1#exit
