@@ -1,0 +1,11 @@
+"""
+1b. Use curl to access "https://netbox.lasthop.io/api/dcim/devices/". 
+This API endpoint requires authentication; use the "-H" flag to provide this authentication information. 
+Note, the lab has a NETBOX_TOKEN environment variable. Consequently, you should be able to do the following:
+
+curl -H "Authorization: Token $NETBOX_TOKEN" https://netbox.lasthop.io/api/dcim/devices/ --insecure | jq
+"""
+
+
+
+curl -H "Authorization: Token $NETBOX_TOKEN" https://netbox.lasthop.io/api/dcim/devices/ --insecure | jq
