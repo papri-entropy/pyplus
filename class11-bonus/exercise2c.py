@@ -1,15 +1,10 @@
 #!/usr/bin/env python
 
 """
-2a. Using the Python requests library, perform an HTTP GET on the base URL of the NetBox server 
-(https://netbox.lasthop.io/api/). Ensure that you are not verifying the SSL certificate. 
-Print the HTTP status code, the response text, the JSON response, and the HTTP response headers. 
-These items can be accessed using the following attributes/methods in the Python-requests Response object:
-
-response.status_code
-response.text
-response.json()
-response.headers
+2c. Execute another HTTP GET request to retrieve all of the endpoints under the "/api/dcim" parent. 
+Pretty print out the response.json() from this output. 
+This should be a dictionary with the key being the next part of the URL after "/api/dcim" 
+and the value being the full URL.
 """
 
 import requests

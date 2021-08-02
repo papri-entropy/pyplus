@@ -1,15 +1,13 @@
 #!/usr/bin/env python
 
 """
-2a. Using the Python requests library, perform an HTTP GET on the base URL of the NetBox server 
-(https://netbox.lasthop.io/api/). Ensure that you are not verifying the SSL certificate. 
-Print the HTTP status code, the response text, the JSON response, and the HTTP response headers. 
-These items can be accessed using the following attributes/methods in the Python-requests Response object:
+2b. Repeat exercise 2a, except properly construct the HTTP request headers as follows:
 
-response.status_code
-response.text
-response.json()
-response.headers
+http_headers = {}
+http_headers["accept"] = "application/json; version=2.4;"
+
+You will need to pass these HTTP headers into your HTTP GET request. 
+Once again print the HTTP status code, the response text, the JSON response, and the HTTP response headers. 
 """
 
 import requests
